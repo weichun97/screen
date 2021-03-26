@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://47.115.21.114:3306/screen?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&tinyInt1isBit=false
+    username: root
+    password: fgoc-cnshe
+    type: com.alibaba.druid.pool.DruidDataSource
+    validationQuery: SELECT 1
+    initial-size: 20
+    min-idle: 20
+    maxActive: 50
+  application:
+    name: screen
+server:
+  port: 8096

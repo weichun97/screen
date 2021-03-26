@@ -1,18 +1,3 @@
-spring:
-  datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/screen?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&tinyInt1isBit=false
-    username: root
-    password: root
-    type: com.alibaba.druid.pool.DruidDataSource
-    validationQuery: SELECT 1
-    initial-size: 20
-    min-idle: 20
-    maxActive: 50
-  application:
-    name: screen
-server:
-  port: 8080
 chun:
   generate:
     template-map:
@@ -82,3 +67,6 @@ chun:
             suffix: SaveUpdateParam.java
             type: class
             need-table-package: true
+spring:
+  profiles:
+    active: me

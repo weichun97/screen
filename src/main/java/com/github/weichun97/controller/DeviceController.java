@@ -17,11 +17,11 @@ import javax.validation.Valid;
 /**
  * @author chun
  * @date 2020/9/4
- * @description 
+ * @description
  */
 @RequestMapping("device")
 @RestController
-@Api(value = "DeviceController", tags = "")
+@Api(value = "DeviceController", tags = "设备")
 public class DeviceController {
 
     @Autowired
